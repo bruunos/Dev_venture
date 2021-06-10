@@ -3,4 +3,7 @@
     <string name="dado_1">Dado 1</string>
     <string name="dado_2">Dado 2</string>
     <string name="gerarNumero">Gerar número</string>
+    <string name="welcomeMsg">Boas vindas</string>
+    <string name="dica">Nome</string>
+    
 </resources>
