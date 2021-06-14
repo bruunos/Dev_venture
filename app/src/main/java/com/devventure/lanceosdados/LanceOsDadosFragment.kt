@@ -24,7 +24,7 @@ class LanceOsDadosFragment : Fragment() {
         val welcomeText = binding?.welcomeMsg
         val shareButton = binding?.ShareButton
 
-        welcomeText?.text = getString(R.string.welcomeMsg)
+        welcomeText?.text = "Bem vindo, ${arguments?.getString("nomeJogador")}"
 
         val dices = listOf(R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6)
 
