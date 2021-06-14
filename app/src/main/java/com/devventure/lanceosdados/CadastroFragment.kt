@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.devventure.lanceosdados.databinding.FragmentCadastroBinding
 
 
@@ -27,6 +29,7 @@ class CadastroFragment : Fragment() {
 
         btn?.setOnClickListener{
             val player = playerName?.text.toString()
+            findNavController().navigate(R.id.action_cadastroFragment_to_lanceOsDadosFragment, bundleOf("nomeJogador" to player))
         }
         return binding?.root
 

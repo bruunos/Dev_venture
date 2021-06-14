@@ -9,10 +9,19 @@
         android:id="@+id/cadastroFragment"
         android:name="com.devventure.lanceosdados.CadastroFragment"
         android:label="fragment_cadastro"
-        tools:layout="@layout/fragment_cadastro" />
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_lanceOsDadosFragment"
+            app:destination="@id/lanceOsDadosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/lanceOsDadosFragment"
         android:name="com.devventure.lanceosdados.LanceOsDadosFragment"
         android:label="fragment_lance_os_dados"
-        tools:layout="@layout/fragment_lance_os_dados" />
+        tools:layout="@layout/fragment_lance_os_dados" >
+        <argument
+            android:name="jogador"
+            app:argType="string"
+            android:defaultValue="jogador" />
+    </fragment>
 </navigation>
